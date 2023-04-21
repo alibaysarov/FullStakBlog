@@ -1,0 +1,11 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h3{
+  font-size: 2.8 rem;
+}
+body{
+  background-color: #F9F7F7;
+}

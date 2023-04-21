@@ -1,0 +1,44 @@
+import { createTheme } from '@mui/material/styles';
+
+export const theme=createTheme({
+  palette:{
+    mode:'light',
+    text:{
+      primary:'#333'
+    },
+    primary:{
+      main:'#2275F2'
+    },
+    success:{
+      main:'#03A100'
+    },
+    error:{
+      main:'#E31609'
+    }
+  },
+  typography:{
+    h1:{
+      fontWeight:600
+    },
+    h2:{
+      fontWeight:600,
+      fontSize:'3rem'
+    },
+    h3:{
+      fontWeight:500,
+      fontSize:'2,8rem'
+    },
+    h4:{
+      fontWeight:500,
+      fontSize:'2.5rem',
+    },
+    h5:{
+      fontWeight:400,
+      fontSize:'2rem'
+    },
+    h6:{
+      fontWeight:500,
+      fontSize:'1,5625rem'
+    }
+  }
+})
