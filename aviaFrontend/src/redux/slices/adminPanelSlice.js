@@ -29,6 +29,7 @@ const adminPanelSlice=createSlice({
         tagInputValue:'',
         content:'',
         tags:[],
+        category:{},
     },
     reducers:{
         inputContentHandler:(state,action)=>{

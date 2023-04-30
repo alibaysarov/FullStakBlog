@@ -19,13 +19,11 @@ const TaggedPosts = () => {
       console.log(taggedPosts)
     }
     getmeTaggedPost()
-    useTitle(`#${tag}`);
   },[tag])
+  useTitle(`#${tag}`);
   return (
     <Stack direction={'column'}  spacing={2} marginY={5}>
       {
-        // !taggedPosts ||status=='loading'
-        // ?<Typography variant={'h3'} component={'h4'}> Идет загрузка...</Typography>
         taggedPosts.length
         &&taggedPosts.map((post,id)=>(
           
