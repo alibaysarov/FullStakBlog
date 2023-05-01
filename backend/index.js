@@ -148,5 +148,8 @@ app.delete(
   authMiddleWare,
   UserController.removeFromsavedPosts
 );
-
+app.use(express.static(path.join(__dirname, "../aviaFrontend/", "dist")));
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../aviaFrontend", "dist", "index.html"));
+});
 app.listen(PORT, () => console.log("server started"));

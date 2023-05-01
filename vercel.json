@@ -2,14 +2,20 @@
   "version":2,
   "builds":[
     {
-      "src":"index.js",
+      "src":"./backend/index.js",
       "use":"@vercel/node"
     }
   ],
   "routes":[
     {
-      "src":"/(.*)",
-      "dest":"/"
+      "src":"./aviaFrontend/dist",
+      "dest":"@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "./backend/server.js"
     }
   ]
 }
